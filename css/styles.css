@@ -175,6 +175,10 @@ body {
   list-style-type: none;
 }
 
+.details-item {
+  width: 270px;
+}
+
 .details-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -244,8 +248,13 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.employee-about {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .employee-name {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
 
@@ -256,7 +265,7 @@ body {
 
 .employee-position {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   text-align: center;
 
   font-weight: 400;
@@ -364,7 +373,8 @@ body {
 }
 
 .portfolio-item {
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  border-top: none;
   width: calc((100% - 60px) / 3);
 }
 
@@ -384,11 +394,15 @@ body {
   display: block;
 }
 
+.portfolio-about {
+  padding: 20px 24px;
+}
+
 .portfolio-title {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-left: 0;
+  margin-right: 0;
 
   font-weight: 700;
   font-size: 18px;
@@ -398,18 +412,15 @@ body {
   color: var(--title-color);
 }
 
-.title-style:hover,
-.title-style:focus,
-.descrition-style:hover,
-.descrition-style:focus {
+.portfolio-title:hover,
+.portfolio-title:focus,
+.portfolio-description:hover,
+.portfolio-description:focus {
   color: var(--accent-color);
 }
 
 .portfolio-description {
-  margin-top: 0;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0;
 
   font-size: 16px;
   line-height: 1.88;
